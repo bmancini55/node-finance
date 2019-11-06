@@ -4,9 +4,14 @@
   "description": "Finance utilities for JavaScript",
   "main": "lib/index.js",
   "scripts": {
-    "test": "mocha '__tests__/**/*.spec.js'"
+    "test": "nyc mocha '__tests__/**/*.spec.js'",
+    "format": "prettier --check \"lib/**/*.js\"",
+    "lint": "eslint lib",
+    "ci": "npm run lint && npm run format && npm run test"
   },
   "keywords": [
+    "finance",
+    "black-scholes",
     "statistics"
   ],
   "author": "Brian Mancini <bmancini@gmail.com>",
@@ -15,6 +20,7 @@
     "chai": "^4.2.0",
     "eslint": "^6.6.0",
     "mocha": "^6.2.2",
+    "nyc": "^14.1.1",
     "prettier": "^1.18.2"
   }
 }

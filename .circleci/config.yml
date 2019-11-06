@@ -1,0 +1,13 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/node:12.13.0
+
+    working_directory: ~/repo
+
+    steps:
+      - checkout
+      - run: npm install
+      - run: npm run ci
+      - run: bash <(curl -s https://codecov.io/bash)
