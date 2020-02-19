@@ -4,9 +4,11 @@
   "description": "Finance utilities for JavaScript",
   "main": "lib/index.js",
   "scripts": {
-    "test": "nyc mocha '__tests__/**/*.spec.js'",
+    "prepublish": "npm run build",
+    "build": "ts",
+    "test": "nyc --extension=.ts mocha --require ts-node/register --recursive \"__tests__/**/*.spec.*\"",
     "format": "prettier --check \"lib/**/*.js\"",
-    "lint": "eslint lib",
+    "lint": "tslint lib",
     "ci": "npm run lint && npm run format && npm run test"
   },
   "keywords": [
@@ -17,10 +19,17 @@
   "author": "Brian Mancini <bmancini@gmail.com>",
   "license": "MIT",
   "devDependencies": {
+    "@types/chai": "^4.2.9",
+    "@types/mocha": "^7.0.1",
+    "@types/node": "^13.7.2",
     "chai": "^4.2.0",
     "eslint": "^6.6.0",
     "mocha": "^6.2.2",
     "nyc": "^14.1.1",
-    "prettier": "^1.18.2"
-  }
+    "prettier": "^1.18.2",
+    "ts-node": "^8.6.2",
+    "tslint": "^6.0.0",
+    "typescript": "^3.7.5"
+  },
+  "dependencies": {}
 }
