@@ -23,3 +23,8 @@ export const stats = {
   ...normalImport,
   ...lognormalImport,
 };
+
+import * as optionsBasicImport from "./options-basic";
+export const options = {
+  ...optionsBasicImport,
+};
