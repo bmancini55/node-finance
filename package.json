@@ -1,11 +1,11 @@
 {
   "name": "@bmancini55/finance",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Finance utilities for JavaScript",
-  "main": "lib/index.js",
+  "main": "dist/index.js",
   "scripts": {
     "prepublish": "npm run build",
-    "build": "ts",
+    "build": "tsc",
     "test": "nyc --extension=.ts mocha --require ts-node/register --recursive \"__tests__/**/*.spec.*\"",
     "format": "prettier --check \"lib/**/*.js\"",
     "lint": "tslint lib",
