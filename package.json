@@ -1,6 +1,6 @@
 {
   "name": "@bmancini55/finance",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Finance utilities for JavaScript",
   "main": "dist/index.js",
   "scripts": {
@@ -19,17 +19,17 @@
   "author": "Brian Mancini <bmancini@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "@types/chai": "^4.2.9",
-    "@types/mocha": "^7.0.1",
-    "@types/node": "^13.7.2",
-    "chai": "^4.2.0",
-    "eslint": "^6.6.0",
-    "mocha": "^8.0.1",
+    "@types/chai": "^4.2.16",
+    "@types/mocha": "^7.0.2",
+    "@types/node": "^13.13.48",
+    "chai": "^4.3.4",
+    "eslint": "^6.8.0",
+    "mocha": "^8.3.2",
     "nyc": "^14.1.1",
-    "prettier": "^1.18.2",
-    "ts-node": "^8.6.2",
-    "tslint": "^6.0.0",
-    "typescript": "^3.7.5"
+    "prettier": "^1.19.1",
+    "ts-node": "^8.10.2",
+    "tslint": "^6.1.3",
+    "typescript": "^3.9.9"
   },
   "dependencies": {}
 }
