@@ -1,6 +1,6 @@
 {
   "name": "@bmancini55/finance",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Finance utilities for JavaScript",
   "main": "dist/index.js",
   "scripts": {
